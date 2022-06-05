@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -44,8 +45,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -82,8 +82,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -230,8 +229,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -265,8 +263,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -339,4 +336,167 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  boxsizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-textsize-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*---------------------------------------------------------------------------------------*/
+body {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 130%;
+  color: #000;
+}
+
+/*---------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Georgia';
+  src: url("Georgia.eot");
+  src: local("Georgia"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff2") format("woff2"), url("Georgia.woff") format("woff"), url("Georgia.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("Georgia-Bold.eot");
+  src: local("Georgia Bold"), local("Georgia-Bold"), url("Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("Georgia-Bold.woff2") format("woff2"), url("Georgia-Bold.woff") format("woff"), url("Georgia-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("Georgia-Italic.eot");
+  src: local("Georgia Italic"), local("Georgia-Italic"), url("Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("Georgia-Italic.woff2") format("woff2"), url("Georgia-Italic.woff") format("woff"), url("Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local("Arial Regular"), local("Arial-Regular"), url("ArialMT.woff2") format("woff2"), url("ArialMT.woff") format("woff"), url("ArialMT.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local("Arial Italic"), local("Arial-Italic"), url("Arial-ItalicMT.woff2") format("woff2"), url("Arial-ItalicMT.woff") format("woff"), url("Arial-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.logo__title {
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.logo__subtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: calc(15 / 13 * 100%);
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+.menu-header__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu-header__link {
+  font-family: 'Arial';
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
 }
