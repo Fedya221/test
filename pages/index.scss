@@ -1,12 +1,5 @@
-body{
-    background-color: black;
-    font-size: 15px;
-}
-
-p {
-   color: red;
-}
-
-h1 {
-   font-size: 33px;
-}
+@import "./scss/normalize";
+@import "./scss/base";
+@import "./scss/fonts";
+@import "./scss/mixins";
+@import "./scss/variables";
