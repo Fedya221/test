@@ -1,0 +1,15 @@
+@mixin fontArial ($fw, $fs, $lh, $clr) { 
+   font-family: 'Arial', sans-serif;
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+   color: $clr;
+}
+
+@mixin fontGeorgia ($fw, $fs, $lh, $clr) { 
+   font-family: 'Georgia', sans-serif;
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+   color: $clr; 
+}
